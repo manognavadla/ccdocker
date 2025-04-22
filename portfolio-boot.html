@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadla Manogna - Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #c1b9b9;
+            background-color: #050741;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+        }
+        
+        .header {
+            padding: 3rem 0 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #1a1c54;
+        }
+        
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: #d3cdcd;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 40px;
+            height: 3px;
+            background-color: #4a6cf7;
+        }
+        
+        .project {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #1a1c54;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project-title {
+            font-weight: 600;
+            color: #938d8d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-tech {
+            font-size: 0.85rem;
+            color: #8a8aa0;
+            margin-bottom: 0.75rem;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #0c0e52;
+            color: #4a6cf7;
+            font-size: 0.8rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-item {
+            margin-bottom: 1rem;
+        }
+        
+        .school-name {
+            font-weight: 600;
+            color: #c1b9b9;
+        }
+        
+        .year {
+            font-size: 0.9rem;
+            color: #8a8aa0;
+        }
+        
+        .grade {
+            display: inline-block;
+            background-color: #0c0e52;
+            color: #4a6cf7;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+        }
+        
+        .contact-item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-link {
+            color: #4a6cf7;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .contact-link:hover {
+            color: #2a4cd7;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        .role {
+            font-size: 1.2rem;
+            color: #8a8aa0;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            padding-left: 1.25rem;
+        }
+        
+        li {
+            margin-bottom: 0.25rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #8a8aa0;
+            font-size: 0.9rem;
+            border-top: 1px solid #1a1c54;
+        }
+        body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode a {
+    color: #90caf9;
+}
+
+.dark-mode .section-title {
+    color: #90caf9;
+}
+
+.dark-mode .tag {
+    background-color: #333;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header text-center">
+            <h1 class="name">Vadla Manogna</h1>
+            <p class="role">Computer Science and Engineering Student</p>
+            <div>
+                <a href="mailto:janedoe@lala.com" class="contact-link me-3">janedoe@gmail.com</a>
+                <a href="https://github.com/manognavadla" class="contact-link me-3">GitHub</a>
+                <a href="tel:6305391345" class="contact-link">6305391345</a>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>I am an enthusiastic Computer Science and Engineering student passionate about software development, artificial intelligence, and problem-solving. I enjoy working on AI/ML, full-stack development, and automation.</p>
+            <p>Throughout my academic journey, I have worked on various projects, including AI-powered chatbots and remote sensing applications. I love collaborating on open-source projects and upskilling through courses and certifications.</p>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <strong>Languages</strong>
+                </div>
+                <div class="col-md-9 mb-3">
+                    <span class="tag">Python</span>
+                    <span class="tag">C</span>
+                    <span class="tag">C++</span>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <strong>Databases</strong>
+                </div>
+                <div class="col-md-9 mb-3">
+                    <span class="tag">MySQL</span>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <strong>Frameworks</strong>
+                </div>
+                <div class="col-md-9 mb-3">
+                    <span class="tag">Rasa</span>
+                    <span class="tag">React.js</span>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <strong>Coursework</strong>
+                </div>
+                <div class="col-md-9 mb-3">
+                    <span class="tag">OOP</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">DBMS</span>
+                    <span class="tag">OS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project">
+                <h4 class="project-title">Third Eye for the Blind</h4>
+                <div class="project-tech">Ultrasonic sensors, Arduino board, Arduino IDE</div>
+                <ul>
+                    <li>Aids blind individuals by detecting obstacles.</li>
+                    <li>Uses an ultrasonic sensor to generate beep sounds and vibrations when an obstacle is identified.</li>
+                    <li>Optional buzzer sound controlled with a switch.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h4 class="project-title">AI/ML Powered Chatbot with Mascot</h4>
+                <div class="project-tech">Rasa framework, React.js, SQLite3</div>
+                <ul>
+                    <li>A chatbot educating users about the Namami Gange program.</li>
+                    <li>Built with Rasa, React.js, and SQLite3 for feedback management.</li>
+                    <li>Integrated animations using GSAP.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h4 class="project-title">Retail LLM</h4>
+                <div class="project-tech">LLM, MERN</div>
+                <ul>
+                    <li>Developed LLM-powered search and personalized product recommendations.</li>
+                    <li>Implemented real-time sales data analysis.</li>
+                    <li>Designed financial analysis tools for mart-owners.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h4 class="project-title">Remote Sensing with SAR Images</h4>
+                <div class="project-tech">Flutter, Firebase, GenAI Models</div>
+                <ul>
+                    <li>Developed a mobile and web application for SAR image processing.</li>
+                    <li>Implemented classification, flood area detection, and SAR image colorization.</li>
+                    <li>Used Firebase for authentication and secure access.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h4 class="project-title">SKANA - Skill Gap Analysis and Upskill Recommendation Tool</h4>
+                <div class="project-tech">React, TailwindCSS, MongoDB, Flask</div>
+                <ul>
+                    <li>Bridges job seekers' skill gaps with industry demands.</li>
+                    <li>Developed an AI-powered skill analysis and recommendation engine.</li>
+                    <li>Integrated Groq API for skill analysis and Udemy course recommendations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certification Section -->
+        <section class="section">
+            <h2 class="section-title">Certification</h2>
+            <p>Elite Silver Certification in NPTEL (Jul-Aug, 2023) - Python for Data Science</p>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="school-name">Keshav Memorial Institute of Technology</div>
+                <div class="year">2022-2026</div>
+                <div>B.Tech-CSE <span class="grade">CGPA: 8.64</span></div>
+            </div>
+            
+            <div class="education-item">
+                <div class="school-name">Narayana Jr. College</div>
+                <div class="year">2021-2022</div>
+                <div>TSBIE <span class="grade">97.6%</span></div>
+            </div>
+            
+            <div class="education-item">
+                <div class="school-name">Dilsukhnagar High School</div>
+                <div class="year">2019-2020</div>
+                <div>TSBSE <span class="grade">CGPA: 10</span></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:manognavadla04@gmail.com" class="contact-link">manognavadla04@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/manognavadla" class="contact-link">manognavadla</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong>
+                        <a href="https://linkedin.com/in/vadla-manogna" class="contact-link">linkedin.com/in/vadla-manogna</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:6305391345" class="contact-link">6305391345</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            © 2025 Vadla Manogna
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.createElement('button');
+        backToTopBtn.innerHTML = '↑';
+        backToTopBtn.id = 'backToTopBtn';
+        backToTopBtn.style.position = 'fixed';
+        backToTopBtn.style.bottom = '30px';
+        backToTopBtn.style.right = '30px';
+        backToTopBtn.style.display = 'none';
+        backToTopBtn.style.padding = '10px 15px';
+        backToTopBtn.style.borderRadius = '50%';
+        backToTopBtn.style.backgroundColor = '#007bff';
+        backToTopBtn.style.color = '#fff';
+        backToTopBtn.style.border = 'none';
+        backToTopBtn.style.zIndex = '1000';
+        backToTopBtn.style.cursor = 'pointer';
+        
+        document.body.appendChild(backToTopBtn);
+        
+        window.onscroll = () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Dynamic year in footer
+        const footer = document.querySelector(".footer .container");
+        footer.innerHTML = `© ${new Date().getFullYear()} Vadla Manogna`;
+        
+        // Toggle theme
+        const themeToggle = document.createElement('button');
+        themeToggle.innerHTML = '🌓';
+        themeToggle.id = 'themeToggle';
+        themeToggle.style.position = 'fixed';
+        themeToggle.style.top = '20px';
+        themeToggle.style.right = '20px';
+        themeToggle.style.padding = '10px';
+        themeToggle.style.backgroundColor = '#343a40';
+        themeToggle.style.color = 'white';
+        themeToggle.style.border = 'none';
+        themeToggle.style.borderRadius = '8px';
+        themeToggle.style.cursor = 'pointer';
+        themeToggle.style.zIndex = '1000';
+        document.body.appendChild(themeToggle);
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+        </script>
+        
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
